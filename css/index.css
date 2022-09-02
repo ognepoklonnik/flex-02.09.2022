@@ -1,0 +1,64 @@
+html,body {
+    background-color: darkkhaki;
+    margin: 10px;
+}
+
+.container {
+    background-color: rgb(9, 163, 109);
+    padding: 15px;
+ 
+}
+
+.container > div {
+    padding: 15px;
+    text-align: center;
+    font-size: 200%;
+    color: orangered;
+    
+}
+
+.container > div:nth-child(1) {
+    background-color: rgb(40, 18, 131);
+
+}
+.container > div:nth-child(2) {
+    background-color: rgb(15, 142, 6);
+    
+}
+.container > div:nth-child(3) {
+    background-color: rgb(229, 229, 229);
+
+}
+.container {
+    display: flex;
+    /* main axis */
+    flex-direction: row;
+    /* cross axis */
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* height: 650px; */
+    flex-wrap: wrap;
+}
+
+/* .container > div {
+    flex: 1;
+    width: 280px;
+} */
+
+.one {
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    order: -1;
+}
+.two {
+    flex: 1 1 200px;
+    order: 1 ;
+}
+.three {
+    flex-grow: 1;
+    flex-basis: 200px;
+    flex-shrink: 1;
+    order: 0;
+}
+
